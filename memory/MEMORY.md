@@ -1,2 +1,0 @@
-- [skill-save-location-consultation](feedback_skill_save_location.md) — 保存新 skill 时先给建议并说明理由，再询问用户最终决定
-- [gstack-proactive-recommendation](feedback_gstack_proactive_recommendation.md) — 写代码时主动推荐合适的 gstack skill，最终决定权留给用户
