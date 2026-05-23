@@ -2,3 +2,4 @@
 - [gstack-proactive-recommendation](feedback_gstack_proactive_recommendation.md) — 写代码时主动推荐合适的 gstack skill，最终决定权留给用户
 - [official-info-first](feedback_official_info_first.md) — 涉及有明确官方渠道的问题时，优先联网搜索官方最新信息再回答
 - [auto-sync-preferences](feedback_auto_sync_preferences.md) — 偏好文件更新后自动推送到 GitHub，新会话自动拉取最新偏好
+- [onenote-bridge-v1-complete](project_onenote_bridge.md) — onenote-bridge v1.0 完成，认证打通，首次笔记本整理已做，下次定义写入格式
