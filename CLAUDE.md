@@ -14,4 +14,4 @@
 - 本地路径: ~/.claude/preferences-repo/
 - **上传**：仅当用户明确要求"上传偏好"/"推送偏好"/"更新 GitHub 偏好"时，才在仓库目录执行 git add -A && git commit && git push
 - **下载**：仅当用户明确要求"同步偏好"/"拉取偏好"/"下载偏好"时，才在仓库目录执行 git pull
-- 新电脑恢复: git clone https://github.com/ma-xue-feng/dotfiles.git ~/.claude/preferences-repo
+
