@@ -11,7 +11,7 @@
 
 ## 偏好文件同步（手动触发）
 - 偏好文件（记忆、CLAUDE.md等）通过 GitHub 仓库同步: https://github.com/ma-xue-feng/dotfiles
-- 本地路径: ~/.claude/preferences-repo/
+
 - **上传**：仅当用户明确要求"上传偏好"/"推送偏好"/"更新 GitHub 偏好"时，才在仓库目录执行 git add -A && git commit && git push
 - **下载**：仅当用户明确要求"同步偏好"/"拉取偏好"/"下载偏好"时，才在仓库目录执行 git pull
 

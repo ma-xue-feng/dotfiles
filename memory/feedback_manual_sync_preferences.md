@@ -15,7 +15,7 @@ metadata:
 
 **How to apply:**
 - 偏好文件 GitHub 仓库: https://github.com/ma-xue-feng/dotfiles
-- 本地路径: ~/.claude/preferences-repo/
+
 
 - 日常使用中除非用户明确要求，否则不主动执行 git pull/push
 
