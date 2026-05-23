@@ -1,21 +1,22 @@
 ---
 name: auto-sync-preferences
-description: 偏好文件更新后自动同步到 GitHub，新会话自动从 GitHub 拉取最新偏好
+description: 偏好文件同步改为手动触发——用户明确要求上传时才推送，明确要求下载时才拉取
 metadata: 
   node_type: memory
   type: feedback
   originSessionId: cde72299-47c0-4422-bb96-8fd0407e4b05
 ---
 
-每次更新本地偏好文件（记忆文件、CLAUDE.md、settings.json 等）后，自动将变更提交并推送到 GitHub 仓库。每次开启新会话时，自动从 GitHub 拉取最新偏好文件。
+偏好文件同步不再自动执行，改为手动触发：
+- **上传（push）**：仅当用户明确说"上传偏好"/"推送偏好"/"更新 GitHub 偏好"等时，才在仓库目录执行 git add -A && git commit && git push
+- **下载（pull）**：仅当用户明确说"同步偏好"/"拉取偏好"/"下载偏好"等时，才在仓库目录执行 git pull
 
-**Why:** 用户需要在多台电脑间同步 Claude Code 偏好设置，避免重复配置。
+**Why:** 用户希望更精确地控制同步时机，避免每次会话自动拉取和每次写入自动推送。
 
 **How to apply:**
 - 偏好文件 GitHub 仓库: https://github.com/ma-xue-feng/dotfiles
 - 本地路径: ~/.claude/preferences-repo/
-- 写入偏好文件后：在仓库目录执行 git add -A && git commit && git push（通过 PostToolUse hook 自动触发）
-- 会话开始：在仓库目录执行 git pull（通过 SessionStart hook 自动触发）
 - 新电脑恢复：`git clone https://github.com/ma-xue-feng/dotfiles.git ~/.claude/preferences-repo`
+- 日常使用中除非用户明确要求，否则不主动执行 git pull/push
 
 参见 [[official-info-first]]
