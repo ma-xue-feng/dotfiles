@@ -8,3 +8,10 @@
 
 ## 文件保存偏好
 - 保存新 skill 或配置文件时，先给出建议并说明理由，再询问用户最终决定
+
+## 偏好文件同步
+- 偏好文件（记忆、CLAUDE.md等）通过 GitHub 仓库同步: https://github.com/ma-xue-feng/dotfiles
+- 本地路径: ~/.claude/preferences-repo/
+- 每次会话开始自动 git pull 同步最新偏好
+- 每次写入偏好文件后自动 git commit + push
+- 新电脑恢复: git clone https://github.com/ma-xue-feng/dotfiles.git ~/.claude/preferences-repo
