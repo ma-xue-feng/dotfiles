@@ -54,5 +54,11 @@ fs.writeFileSync(settingsPath, JSON.stringify(settings, null, 2) + '\n');
 "
 echo "✓ settings.json 同步配置已完成"
 
+# 3. 自毁：引导完成后从仓库中移除自身
+rm "$REPO_DIR/setup.sh"
+set +e
+cd "$REPO_DIR" && git add setup.sh && git commit -m "引导完成，移除 setup.sh" && git push 2>/dev/null
+set -e
+
 echo ""
 echo "偏好同步已就绪，重启 Claude Code 即可。"
