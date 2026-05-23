@@ -1,5 +1,5 @@
 ---
-name: auto-sync-preferences
+name: manual-sync-preferences
 description: 偏好文件同步改为手动触发——用户明确要求上传时才推送，明确要求下载时才拉取
 metadata: 
   node_type: memory

@@ -1,5 +1,5 @@
 - [skill-save-location-consultation](feedback_skill_save_location.md) — 保存新 skill 时先给建议并说明理由，再询问用户最终决定
 - [gstack-proactive-recommendation](feedback_gstack_proactive_recommendation.md) — 写代码时主动推荐合适的 gstack skill，最终决定权留给用户
 - [official-info-first](feedback_official_info_first.md) — 涉及有明确官方渠道的问题时，优先联网搜索官方最新信息再回答
-- [auto-sync-preferences](feedback_auto_sync_preferences.md) — 偏好同步改为手动触发，用户明确要求上传时才推送，明确要求下载时才拉取
+- [manual-sync-preferences](feedback_manual_sync_preferences.md) — 偏好同步改为手动触发，用户明确要求上传时才推送，明确要求下载时才拉取
 - [onenote-bridge-v1-complete](project_onenote_bridge.md) — onenote-bridge v1.0 完成，认证打通，首次笔记本整理已做，下次定义写入格式
