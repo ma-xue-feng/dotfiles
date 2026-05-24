@@ -1,0 +1,4 @@
+- [OneNote-Bridge 项目](project_onenote_bridge.md) — OneNote 管理工具项目概况、API限制、脚本清单、待办
+- [OneNote 格式规范](feedback_onenote_formatting.md) — 字体/标题/命名规则、论文/教材模板、匹配逻辑
+- [教材模板规范](project_textbook_template.md) — 4独立页、统一设计语言、结构化数据、分区命名规则
+- [禁止编造数据](feedback_no_fabrication.md) — 无法获取真实数据时必须主动说明，不能猜测或伪造
