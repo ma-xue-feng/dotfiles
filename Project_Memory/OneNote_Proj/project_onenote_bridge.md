@@ -8,17 +8,29 @@ metadata:
 ---
 
 ## 项目位置
-`/f/OneNote-Bridge v1.0/`
+`F:\OneNote-Bridge v1.0`
+
+## 认证状态
+- Azure AD 设备码流程（bridge/auth.py），client_id: 429fca40-b1f7-47a7-8fdf-1468299bd9ba
+- Token 已缓存于 `~/.onenote-bridge/token.json`，无需重复登录
 
 ## 核心能力
 - Microsoft Graph API 封装（bridge/graph_client.py）：笔记本/分区组/分区/页面的完整 CRUD
-- 认证：Azure AD 设备码流程（bridge/auth.py），token 缓存于 `~/.onenote-bridge/token.json`
 - HTML 渲染：formatters/to_onetml.py（OneNote 兼容 HTML）
 - 模板系统：templates/ 目录 + bridge/registry.py
+
+## 当前 OneNote 笔记本
+| 笔记本 | ID |
+|--------|-----|
+| 工业机器人 | 0-28063929A23BBA9D!1173 |
+| 深圳十沣学习笔记 | 0-28063929A23BBA9D!se5c06f877d5b47d7aea5ba7094fc4db2 |
+| 阅读论文笔记 | 0-28063929A23BBA9D!1077 |
+| 雪峰 的笔记本 | 0-28063929A23BBA9D!1071 |
 
 ## API 已知限制
 - **子页（Subpage）不支持**：MS Graph 不支持创建/修改父子页面关系
 - **分区组内分区无法删除/重命名**：PATCH/DELETE 对 sectionGroup 下分区无效
+- **delete_notebook 对个人 Microsoft 账户不生效**：删除操作需手动在 OneNote 客户端完成
 - **命名禁用字符**：`? * \ / : < > | &# " ' % ~`，`/` 需替换
 
 ## 当前工作进度
@@ -26,6 +38,8 @@ metadata:
 - 学术论文处理流程（scripts/add_paper.py）已固化
 - 教材书籍处理流程（scripts/add_textbook_v2.py）已固化
 - 工程软件分区固定列出主要 CAE 软件
+- 「工业机器人文献」全部 18 页已迁移至「工业机器人」笔记本
+- 本地备份：`F:\OneNote-Bridge v1.0\output\backup_before_migration\`
 
 ## 关键脚本
 | 脚本 | 用途 |
@@ -37,8 +51,9 @@ metadata:
 ## 待办
 - 职业知识库笔记本设计
 - 批量格式统一工具
+- 「工业机器人文献」笔记本需手动在 OneNote 中关闭
 - ~~文献搜索工具（lib.jingshi2015.com）集成~~ — 已放弃，京师图书馆为代理平台无法程序化检索
 
 ## 重要教训
-- **PAPER_DATA 等示例数据严禁编造**：add_paper.py 中之前的摘要/关键词/参考文献为 AI 编造，用户发现后修正。今后所有写入 OneNote 的数据必须来自真实来源（PDF 原文、用户提供等），无法获取时主动说明。
+- **严禁编造数据**：所有写入 OneNote 的数据必须来自真实来源（PDF 原文、用户提供等），无法获取时主动说明
 - PDF 真实文献存放路径：`Chinese-language literature/`

@@ -1,0 +1,18 @@
+# 敏感文件 — 禁止同步
+settings.json
+settings.local.json
+*.env
+.env
+.env.local
+
+# 凭证和密钥
+credentials.json
+*_credentials.*
+*.pem
+*.key
+service-account.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
