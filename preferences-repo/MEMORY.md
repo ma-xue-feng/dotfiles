@@ -1,0 +1,3 @@
+- [OneNote格式规范](onenote-formatting-rules.md) — 字体/标题/命名规则、论文/教材模板、匹配逻辑
+- [OneNote-Bridge 项目](onenote-bridge-project.md) — MS Graph API 管理 OneNote，认证/笔记本/脚本/API限制/待办
+- [教材模板规范](textbook-template-spec.md) — 4独立页、统一设计语言、结构化数据、分区命名规则
