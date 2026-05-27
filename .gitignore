@@ -1,0 +1,26 @@
+# 敏感配置（含 API Key）
+settings.json
+
+# 运行时数据
+backups/
+cache/
+file-history/
+sessions/
+session-env/
+shell-snapshots/
+telemetry/
+plans/
+projects/
+ide/
+
+# 插件运行时
+plugins/marketplaces/
+
+# 技能中的敏感文件和依赖
+skills/*/.env
+skills/*/node_modules/
+skills/*/package-lock.json
+
+# 系统文件
+.last-cleanup
+"Installation log recording"/

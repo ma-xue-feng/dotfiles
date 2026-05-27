@@ -1,8 +1,0 @@
-- [Skill保存位置咨询](Collab_Pref_Memory/feedback_skill_save_location.md) — 保存新 skill 时先给建议并说明理由，再询问用户最终决定
-- [GStack主动推荐](Collab_Pref_Memory/feedback_gstack_proactive_recommendation.md) — 写代码时主动推荐合适的 gstack skill，最终决定权留给用户
-- [官方信息优先](Collab_Pref_Memory/feedback_official_info_first.md) — 涉及有明确官方渠道的问题时，优先联网搜索官方最新信息再回答
-- [手动同步偏好](Collab_Pref_Memory/feedback_manual_sync_preferences.md) — 偏好同步改为手动触发，用户明确要求上传时才推送，明确要求下载时才拉取
-- [禁止编造数据](Collab_Pref_Memory/feedback_no_fabrication.md) — 无法获取真实数据时必须主动说明，不能猜测或伪造
-- [OneNote格式规范](Project_Memory/OneNote_Proj/feedback_onenote_formatting.md) — 字体/标题/命名规则、论文/教材模板、匹配逻辑
-- [OneNote-Bridge 项目](Project_Memory/OneNote_Proj/project_onenote_bridge.md) — MS Graph API 管理 OneNote，认证/笔记本/脚本/API限制/待办
-- [教材模板规范](Project_Memory/OneNote_Proj/project_textbook_template.md) — 4独立页、统一设计语言、结构化数据、分区命名规则
