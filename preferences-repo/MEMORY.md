@@ -1,3 +1,5 @@
 - [OneNote格式规范](onenote-formatting-rules.md) — 字体/标题/命名规则、论文/教材模板、匹配逻辑
 - [OneNote-Bridge 项目](onenote-bridge-project.md) — MS Graph API 管理 OneNote，认证/笔记本/脚本/API限制/待办
 - [教材模板规范](textbook-template-spec.md) — 4独立页、统一设计语言、结构化数据、分区命名规则
+- [论文模板引擎技能](onenote-paper-template-skill.md) — `/onenote-paper-template`：4套HTML变体、bigram分区匹配、PAPER_DATA schema
+- [严禁绕过确认环节](feedback-confirmation-mandatory.md) — 论文/教材录入确认必须用户手动交互，不可管道绕过
